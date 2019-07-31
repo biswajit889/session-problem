@@ -18,3 +18,6 @@ echo "gnome-session --session=gnome-fallback" > .xsession
 sudo apt-get install gnome-session-flashback
 sudo /etc/init.d/xrdp restart
 sudo echo "gnome-session --session=gnome-flashback-metacity --disable-acceleration-check & gnome-panel" > .xsession
+When not working please type that
+**************-**************-**************************
+sudo sed -i.bak '/fi/a #xrdp multi-users \n "gnome-session --session=gnome-flashback-metacity --disable-acceleration-check & gnome-panel" \n' /etc/xrdp/startwm.sh
