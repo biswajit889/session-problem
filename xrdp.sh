@@ -14,3 +14,7 @@ sudo apt-get install gnome-session-fallback
 sudo  /etc/init.d/xrdp restart
 echo "gnome-session --session=gnome-fallback" > .xsession
 =========================================================
+=========================================================
+sudo apt-get install gnome-session-flashback
+sudo /etc/init.d/xrdp restart
+sudo echo "gnome-session --session=gnome-flashback-metacity --disable-acceleration-check & gnome-panel" > .xsession
